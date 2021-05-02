@@ -10,24 +10,30 @@
 	  <!-- Form Contents -->
 	  <div class="form-body">
                         <h2>Register!</h2>
-                        <form method="get" id="my-form" action="">
+                        <form method="get" id="my-form" action="./register/register.php">
                             <!-- Name Credentials -->
                             <div class="form-item">
                                 <label for="fName" class="test">First Name
-                                    <input type="text" placeholder="Enter your First Name" id="fName" required>
+                                    <input type="text" placeholder="Enter your First Name" name="fName" required>
                                     <p id="error-fName" class="error"></p>
                                 </label>
                                 <br>
                                 <label for="lName" class="test">Last Name
-                                    <input type="text" id="lName" placeholder="Enter your Last Name" required>
+                                    <input type="text" name="lName" placeholder="Enter your Last Name" required>
                                     <p id="error-lName" class="error"></p>
+                                </label>
+
+
+                                <label for="password" class="test">Password
+                                    <input type="password" name="password" placeholder="Enter your Password" required>
+                                    <!-- <p id="error-lName" class="error"></p> -->
                                 </label>
                             </div>
 
                             <!-- Email Credentials -->
                             <div class="form-item">
                                 <label for="email">Email
-                                    <input type="text" placeholder="email@email.com" id="email" required>
+                                    <input type="text" placeholder="email@email.com" name="email" required>
                                     <p id="error-email" class="error"></p>
                                 </label>
                             </div>
